@@ -17,4 +17,4 @@ class Reservation(models.Model):
     comments = models.CharField(max_length=1000)
 
     def __str__(self):
-        return f"{self.name} - {self.date.strftime('%Y-%m-%d %H:%M')}"
+        return f"{self.first_name} - {self.reservation_time.strftime('%Y-%m-%d %H:%M')}"
